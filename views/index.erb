@@ -1,0 +1,14 @@
+<%  $i = @number %>
+
+<%  if @number=="" %>
+  <%  $i = 0 %>
+<% end %>
+
+<h1> <%= "Mi cuenta es : #{$i}" %> </h1>
+
+
+<form action="/" method="get">
+  <input type="hidden" name="custId" value= <%= @number.to_i + 1 %> >  </input>
+
+  <input type="submit" value="suma!!"> </input>
+</form>
